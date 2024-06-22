@@ -7,10 +7,13 @@ Write a function that checks for a perfect square? If it is a perfect square
 #include <math.h>
 
 int perfectSquare(int n) {
-	if(n<0) return 0;
-    int sqrt_n = sqrt(n);
-    return (sqrt_n * sqrt_n == n);
+	if(n<0) return -1;// 
+	
+    int sqrt_n = (int) sqrt(n);
+    return (pow(sqrt,2) == n);// pow(sqrt,2)
 }
+
+int 
 
 int main() {
     int n;
